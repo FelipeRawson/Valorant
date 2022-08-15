@@ -123,3 +123,45 @@ h2{
 .carr3{
     background-color: purple;
 }
+@media screen and (max-width: 768px){
+    .banner{   
+        height: 400px;
+    }
+    .encabezado h1{
+        padding: 3px;
+        font-size: medium;
+    }
+    .noticias{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+    .contenedor1 .video1,.card,.img1{
+        width: 400px;
+        height: 400px;
+    }
+    .imga1{
+        width: 400px;
+        height: 550px;
+    }
+    .duelistas,.controladores,.carr3,.centinelas{
+        width: 700px;
+        height: 700px;
+    }
+    .maina{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+    
+
+}
