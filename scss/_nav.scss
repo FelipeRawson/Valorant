@@ -1,0 +1,22 @@
+.ul1{
+    li{
+        a{
+            display: flex;
+            justify-content: center;
+            &:hover{
+                background-color: rgba(173, 2, 2, 0.836);
+                color: white;
+            }
+        }
+    }
+}
+.ul2{
+    li{
+        a{
+            &:hover{
+                transform: scale(1,1);
+                padding:5px;
+            }
+        }
+    }
+}
