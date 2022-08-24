@@ -1,0 +1,53 @@
+@mixin flex-row-space-evenly (){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.armas{
+    background-image:url(/armas/fondoarsenal.png) ;
+    background-size:contain;
+    background-position-x: center;
+    .titu{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        font-weight: bold;
+    }
+    .card1{
+        @include flex-row-space-evenly;
+        .card{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            
+            &:hover{
+                transform: scale(1.1,1.1);
+                transition: 0.5s;
+            }
+            img{
+                height: 230px;
+                width: 400px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .card1{
+        display: flex;
+        flex-direction: column;
+        
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            &:hover{
+                transform: scale(1.1,1.1);
+                transition: 0.4s;
+            }
+            img{
+                height: 30px;
+                width: 100px;
+            }
+        }
+    }
+}

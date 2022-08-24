@@ -1,1 +1,19 @@
 @import "nav";
+@import "footer";
+@import "main";
+$rojo:#c20404;
+$estilos: (
+    "gris": #514e53,
+    "rojo": $rojo,
+    "centro":center, 
+);
+
+
+.header1{
+    font-size: large;
+    font-weight: bold;
+    color: map-get($map:$estilos , $key:"gris" );
+    display: flex;
+    justify-content: map-get($map:$estilos , $key:"centro" );
+}
+

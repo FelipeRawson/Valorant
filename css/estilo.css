@@ -1,0 +1,105 @@
+.ul1 li a {
+  display: flex;
+  justify-content: center;
+}
+.ul1 li a:hover {
+  background-color: rgba(173, 2, 2, 0.836);
+  color: white;
+}
+
+.ul2 li a:hover {
+  transform: scale(1, 1);
+  padding: 5px;
+}
+
+.riot {
+  width: 150px;
+}
+
+.plataformas {
+  display: flex;
+  justify-content: center;
+}
+
+.plataformas img {
+  width: 60px;
+  height: 60px;
+  transition: 0.5s;
+  margin: 30px;
+  margin-bottom: 0px;
+}
+
+.plataformas img:hover {
+  transform: scale(1.3, 1.3);
+}
+
+.foot1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.foot1 img {
+  transition: 0.5s;
+}
+
+.foot1 img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.armas {
+  background-image: url(/armas/fondoarsenal.png);
+  background-size: contain;
+  background-position-x: center;
+}
+.armas .titu {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  font-weight: bold;
+}
+.armas .card1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.armas .card1 .card {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.armas .card1 .card:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.5s;
+}
+.armas .card1 .card img {
+  height: 230px;
+  width: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  .card1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .card1 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card1 .card:hover {
+    transform: scale(1.1, 1.1);
+    transition: 0.4s;
+  }
+  .card1 .card img {
+    height: 30px;
+    width: 100px;
+  }
+}
+.header1 {
+  font-size: large;
+  font-weight: bold;
+  color: #514e53;
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=estilo.css.map */

@@ -3,6 +3,13 @@
     margin: 0;
     padding: 0;
 }
+.header1{
+    font-size: large;
+    font-weight: bold;
+    color: red;
+    display: flex;
+    justify-content: center;
+}
 .riot{
     width: 150px;
 }
@@ -153,8 +160,10 @@ h2{
         height: 550px;
     }
     .duelistas,.controladores,.carr3,.centinelas{
-        width: 700px;
-        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
     }
     .maina{
        display: flex;
