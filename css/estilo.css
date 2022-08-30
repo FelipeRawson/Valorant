@@ -50,7 +50,7 @@
 
 .armas {
   background-image: url(/armas/fondoarsenal.png);
-  background-size: contain;
+  background-size: cover;
   background-position-x: center;
 }
 .armas .titu {
@@ -59,41 +59,180 @@
   margin: 0;
   font-weight: bold;
 }
-.armas .card1 {
+.armas .card1, .armas .card2, .armas .card3 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-.armas .card1 .card {
+.armas .card1 .card, .armas .card2 .card, .armas .card3 .card {
   margin-top: 50px;
   margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(184, 83, 83, 0.658);
 }
-.armas .card1 .card:hover {
+.armas .card1 .card:hover, .armas .card2 .card:hover, .armas .card3 .card:hover {
   transform: scale(1.1, 1.1);
   transition: 0.5s;
 }
-.armas .card1 .card img {
-  height: 230px;
-  width: 400px;
+.armas .card1 .card img, .armas .card2 .card img, .armas .card3 .card img {
+  height: 200px;
+  width: 23rem;
 }
 
 @media screen and (max-width: 768px) {
-  .card1 {
-    display: flex;
-    flex-direction: column;
-  }
-  .card1 .card {
+  .card1, .card2, .card3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .card1 .card:hover {
+  .card1 .card, .card2 .card, .card3 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+  }
+  .card1 .card:hover, .card2 .card:hover, .card3 .card:hover {
     transform: scale(1.1, 1.1);
     transition: 0.4s;
   }
-  .card1 .card img {
-    height: 30px;
-    width: 100px;
+  .card1 .card img, .card2 .card img, .card3 .card img {
+    height: 100px;
+    width: 150px;
+  }
+}
+.pearl, .fracture {
+  margin: 10px;
+}
+.pearl .carousel-inner .active, .fracture .carousel-inner .active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(49, 49, 49);
+}
+.pearl .carousel-inner .active .map, .fracture .carousel-inner .active .map {
+  width: 900px;
+  height: 550px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: red;
+  background-color: rgb(63, 63, 63);
+}
+
+.desc {
+  background-color: rgb(49, 49, 49);
+}
+.desc h3 {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.desc p {
+  margin: 10px;
+  font-size: medium;
+  font-weight: bold;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .pearl, .fracture {
+    margin: 5px;
+  }
+  .pearl .carousel-inner .active, .fracture .carousel-inner .active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(49, 49, 49);
+  }
+  .pearl .carousel-inner .active .map, .fracture .carousel-inner .active .map {
+    width: 500px;
+    height: 350px;
+  }
+  .desc {
+    background-color: rgb(49, 49, 49);
+  }
+  .desc h3 {
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  .desc p {
+    margin: 5px;
+    font-size: small;
+    color: white;
+  }
+}
+.t1 {
+  display: flex;
+  justify-content: center;
+  color: red;
+  background-color: rgb(36, 36, 36);
+  margin-bottom: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav .pagination {
+  margin-bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.table-responsive {
+  margin-bottom: 0px;
+}
+
+.banner {
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  height: 900px;
+}
+.banner img {
+  width: 100%;
+}
+
+.encabezado {
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #181818 0%, rgba(75, 73, 73, 0.9098039216) 74%);
+}
+.encabezado h1 {
+  color: #ffffff;
+  padding: 15px;
+  margin: 0;
+  font-size: 1.5rem;
+  border-top: solid #000000 1px;
+  border-bottom: solid #000000 1px;
+  text-align: center;
+}
+
+.noticias {
+  background-color: #181818;
+  display: flex;
+  justify-content: space-evenly;
+}
+.noticias .card {
+  margin: 40px;
+  transition: 0.5s;
+}
+.noticias .card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    height: 400px;
+  }
+  .encabezado h1 {
+    padding: 3px;
+    font-size: medium;
   }
 }
 .header1 {

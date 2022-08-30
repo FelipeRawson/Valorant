@@ -1,0 +1,20 @@
+.t1{
+    display: flex;
+    justify-content: center;
+    color: red;
+    background-color: rgb(36, 36, 36);
+    margin-bottom: 0px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    .pagination{
+        margin-bottom: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+.table-responsive{
+    margin-bottom: 0px;
+}

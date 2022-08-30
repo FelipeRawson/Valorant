@@ -1,0 +1,65 @@
+.pearl,.fracture{
+    margin: 10px;
+  .carousel-inner{
+    .active{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(49, 49, 49);
+        .map{
+            width: 900px;
+            height: 550px;
+        }
+    }
+  }
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color:red;
+    background-color: rgb(63, 63, 63);
+}
+.desc{
+     background-color: rgb(49, 49, 49);
+    h3{
+        display: flex;
+     justify-content: center;
+     color: white;
+    }
+    p{
+        margin: 10px;
+        font-size: medium;
+        font-weight: bold;
+        color: white;
+    }
+}
+@media screen and (max-width: 768px){
+    .pearl,.fracture{
+        margin: 5px;
+      .carousel-inner{
+        .active{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(49, 49, 49);
+            .map{
+                width: 500px;
+                height: 350px;
+            }
+        }
+      }
+    } 
+    .desc{
+        background-color: rgb(49, 49, 49);
+       h3{
+           display: flex;
+           justify-content: center;
+           color: white;
+       }
+       p{
+           margin: 5px;
+           font-size: small;
+           color: white;
+       }
+   }     
+}

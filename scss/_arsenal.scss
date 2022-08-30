@@ -5,7 +5,7 @@
 }
 .armas{
     background-image:url(/armas/fondoarsenal.png) ;
-    background-size:contain;
+    background-size:cover;
     background-position-x: center;
     .titu{
         display: flex;
@@ -13,40 +13,46 @@
         margin: 0;
         font-weight: bold;
     }
-    .card1{
-        @include flex-row-space-evenly;
+    .card1,.card2,.card3{
+        @include flex-row-space-evenly;    
         .card{
             margin-top: 50px;
             margin-bottom: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(184, 83, 83, 0.658);
             
             &:hover{
                 transform: scale(1.1,1.1);
                 transition: 0.5s;
             }
             img{
-                height: 230px;
-                width: 400px;
+                height: 200px;
+                width: 23rem;
             }
         }
     }
 }
 @media screen and (max-width: 768px){
-    .card1{
+    .card1,.card2,.card3{
         display: flex;
         flex-direction: column;
-        
+        justify-content: center;
+       
         .card{
             display: flex;
             flex-direction: column;
             justify-content: center;
+            width: 350px;
             
             &:hover{
                 transform: scale(1.1,1.1);
                 transition: 0.4s;
             }
             img{
-                height: 30px;
-                width: 100px;
+                height: 100px;
+                width: 150px;
             }
         }
     }
