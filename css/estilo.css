@@ -91,15 +91,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 350px;
+    width: 250px;
   }
   .card1 .card:hover, .card2 .card:hover, .card3 .card:hover {
     transform: scale(1.1, 1.1);
     transition: 0.4s;
-  }
-  .card1 .card img, .card2 .card img, .card3 .card img {
-    height: 100px;
-    width: 150px;
   }
 }
 .pearl, .fracture {
@@ -235,6 +231,36 @@ nav .pagination {
     font-size: medium;
   }
 }
+.formu {
+  background-color: grey;
+}
+
+.formul {
+  list-style: none;
+  padding: 10px;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+}
+
+.volver > a {
+  background-color: grey;
+  color: white;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  min-width: 100px;
+}
+
+.volver > a:hover {
+  color: black;
+  background-color: #eaeaea;
+}
+
+.fondo {
+  background-color: rgba(179, 178, 178, 0.705);
+}
+
 .header1 {
   font-size: large;
   font-weight: bold;
